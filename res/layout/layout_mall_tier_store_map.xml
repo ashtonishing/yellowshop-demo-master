@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:collapseColumns="4"
+        android:padding="8dp" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/double_stroke_no_padding_edittext_grey_bg" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="8dp"
+               android:background="@drawable/custom_listview_mall_header_bg"
+                
+                android:gravity="center"
+                android:text="Zone Name" />
+<!--  android:background="@drawable/right_orange_border_view" -->
+            <TextView
+                  android:padding="8dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+               android:background="@drawable/custom_listview_mall_header_bg"
+                android:gravity="center"
+                android:drawableLeft="@drawable/ic_user_selected"
+                android:text="Number of People" />
+            
+    <!--            android:background="@drawable/right_solid_orange_grey_border_view" -->
+
+            
+
+        </TableRow>
+
+        <ListView
+            android:id="@+id/mall_tier_store_map_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@android:color/transparent"
+            >
+        </ListView>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/traffic_total_no_of_customers"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/custom_listview_mall_second_row_bg"
+                android:gravity="center"
+                android:padding="8dp"
+                 android:text="Total"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/mall_tier_total_customers"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/custom_listview_mall_second_row_bg"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            
+        </TableRow>
+    </TableLayout>
+    
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_bg_color"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="12dp" >
+
+    <TextView
+        style="@style/preprovisioning_textview_style"
+        android:text="Beacon UUID:" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/layout_preprovisioing_uuid"
+        style="@style/preprovisioning_editext_style" />
+
+    <TextView
+        style="@style/preprovisioning_textview_style"
+        android:text="Major" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/layout_preprovisioing_major"
+        style="@style/preprovisioning_editext_style"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        style="@style/preprovisioning_textview_style"
+        android:text="Minor" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/layout_preprovisioning_minor"
+        style="@style/preprovisioning_editext_style"
+        android:inputType="numberDecimal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/layout_preprovisioing_button_create_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:padding="15dp"
+            android:text="Create BBID"
+            android:textColor="@color/color_alerts_listview_header_text" />
+
+        <Button
+            android:id="@+id/layout_preprovisioing_button_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/button_background"
+            android:padding="15dp"
+            android:text="Cancel"
+            android:textColor="@color/color_alerts_listview_header_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_preprovisioning_bbid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:visibility="gone" >
+
+        <TextView
+            style="@style/preprovisioning_textview_style"
+            android:text="BBID:" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/layout_preprovisioning_bbid"
+            style="@style/preprovisioning_editext_style"
+            android:background="@drawable/ic_edittext_bbid_bg"
+            android:enabled="false"
+            android:gravity="center|left"
+            android:paddingLeft="8dp"
+            android:paddingTop="0dp"
+            android:singleLine="false"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

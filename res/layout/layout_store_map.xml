@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_bg_color"
+    android:padding="8dp" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dashed_border"
+        android:stretchColumns="2" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:id="@+id/first_row_first_column"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/right_bottom_dashed_border"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/zone0_grid_zone_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|top"
+                    android:text="@string/zone0"
+                    android:textColor="@color/color_alerts_listview_description_secondary_text" />
+
+                <GridLayout
+                    android:id="@+id/zone0_grid_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:columnCount="5"
+                    android:gravity="center" >
+                </GridLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/first_row_second_column"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/zone1_grid_zone_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|top"
+                    android:gravity="right|top"
+                    android:text="@string/zone1"
+                    android:textColor="@color/color_alerts_listview_description_secondary_text" />
+
+                <GridLayout
+                    android:id="@+id/zone1_grid_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:columnCount="3" >
+                </GridLayout>
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:id="@+id/second_row_first_column"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <GridLayout
+                    android:id="@+id/zone2_grid_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:columnCount="3" >
+                </GridLayout>
+
+                <TextView
+                    android:id="@+id/zone2_grid_zone_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|bottom"
+                    android:text="@string/zone2"
+                    android:textColor="@color/color_alerts_listview_description_secondary_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/second_row_second_column"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/left_top_dashed_border"
+                android:orientation="vertical" >
+
+                <GridLayout
+                    android:id="@+id/zone3_grid_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:columnCount="3" >
+                </GridLayout>
+
+                <TextView
+                    android:id="@+id/zone3_grid_zone_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|bottom"
+                    android:text="@string/zone3"
+                    android:textColor="@color/color_alerts_listview_description_secondary_text" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

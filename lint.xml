@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="HandlerLeak">
+        <ignore path="src/com/buyopicadmin/admin/ShowMapActivity.java" />
+    </issue>
+    <issue id="InflateParams">
+        <ignore path="src/com/buyopicadmin/admin/fragments/AverageDailyDwellTimeFragment.java" />
+    </issue>
+    <issue id="SimpleDateFormat">
+        <ignore path="src/com/buyopicadmin/admin/models/OrderList.java" />
+    </issue>
+    <issue id="UseSparseArrays">
+        <ignore path="src/com/buyopic/android/network/JsonResponseParser.java" />
+    </issue>
+</lint>

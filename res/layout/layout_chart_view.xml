@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp" >
+
+        <TextView
+            android:id="@+id/foot_traffic_time_of_day_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="Foot Traffic By Time of the day" />
+
+        <Button
+            android:id="@+id/showTableView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:text="Show Table" />
+    </LinearLayout>
+        
+         <CheckBox 
+        android:id="@+id/layout_mapswitch_activate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:button="@drawable/switch_shared_button_selector"
+        android:layout_margin="2dp"
+        android:visibility="gone"
+            />
+    
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white" >
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/header_chart_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:drawablePadding="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:drawableLeft="@drawable/ic_no_of_customers"
+                android:gravity="top|center"
+                android:text="No.of Customers"
+                android:textColor="@color/color_alerts_listview_description_secondary_text" />
+
+            <TextView
+                android:drawablePadding="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:drawableLeft="@drawable/ic_avg_time_zone"
+                android:gravity="top|center"
+                android:paddingLeft="4dp"
+                android:text="Avg.Time in Zone"
+                android:textColor="@color/color_alerts_listview_description_secondary_text" />
+        </LinearLayout>
+      </FrameLayout>
+
+</LinearLayout>

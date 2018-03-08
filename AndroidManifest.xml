@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.buyopicadmin.admin"
+    android:versionCode="8"
+    android:versionName="8.0" >
+
+    <!-- Production com.buyopicadmin.admin -->
+    <!-- Demo : com.buyopicadmin.demo -->
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+    <permission
+        android:name="com.buyopic.android.beacon.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+ 
+      <uses-permission android:name="com.buyopicadmin.admin.permission.MAPS_RECEIVE" />
+<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+       <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    
+  
+    <application
+        android:name="BuyOpic"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_yellow"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+          
+    <meta-data
+     android:name="com.google.android.maps.v2.API_KEY"
+     android:value="AIzaSyBTw7MU4F5PgyQhhSlVjrhE-kcCUwfP_c8" />
+<meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+        
+        <activity android:name="com.buyopicadmin.admin.CreateOfferActivity" >
+        </activity>
+        <activity android:name="com.buyopicadmin.admin.DateTimePickerDemo" >
+        </activity>
+        <activity
+            android:name="com.buyopicadmin.admin.MerchantCreateOfferActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Buyopic_merchant"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" >
+        </activity>
+          <activity
+            android:name="com.buyopicadmin.admin.ShowMapActivity"
+            android:label="@string/mapheader" 
+            android:screenOrientation="portrait"
+             android:theme="@style/Theme.Buyopic_merchant"
+            >
+        </activity>
+        <activity
+            android:name="com.buyopicadmin.admin.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Buyopic_merchant" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="prod-yellow.herokuapp.com"
+                    android:pathPattern="/processurl/yellowshop"
+                    android:scheme="http" />
+                <data
+                    android:host="www.prod-yellow.herokuapp.com"
+                    android:pathPattern="/processurl/yellowshop"
+                    android:scheme="http" />
+            </intent-filter>
+            
+            
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="cloud-ml-client-demo.herokuapp.com"
+                    android:pathPattern="/processurl/yellowshop"
+                    android:scheme="http" />
+                <data
+                    android:host="www.cloud-ml-client-demo.herokuapp.com"
+                    android:pathPattern="/processurl/yellowshop"
+                    android:scheme="http" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="cloud-ml.herokuapp.com"
+                    android:pathPattern="/processurl/yellowshop"
+                    android:scheme="http" />
+                <data
+                    android:host="www.cloud-ml.herokuapp.com"
+                    android:pathPattern="/processurl/yellowshop"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.buyopicadmin.admin.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Buyopic_merchant" >
+        </activity>
+        <activity
+            android:name="com.buyopicadmin.admin.MerchantOfferListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Buyopic_merchant" >
+        </activity>
+        <activity
+            android:name="com.buyopicadmin.admin.ProvisioingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.buyopicadmin.admin.PreprovisioingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.buyopicadmin.admin.BBIDSetupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Buyopic_merchant" >
+        </activity>
+        <activity
+            android:name="com.buyopicadmin.admin.MerchantStoreSetupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Buyopic_merchant"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+
+        <meta-data
+            android:name="com.crashlytics.ApiKey"
+            android:value="0319a1794e70131c40799e49a541b0eb589545a9" />
+
+        <activity
+            android:name="com.buyopicadmin.admin.MerchantCreateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Buyopic_merchant"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.buyopicadmin.admin.HomePageTabActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Buyopic_merchant"
+            android:windowSoftInputMode="adjustUnspecified|adjustResize|adjustPan" >
+        </activity>
+    </application>
+
+</manifest>

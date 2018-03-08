@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="#f47120"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="4dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/actionbar_bg_color"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:shadowColor="@android:color/black"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="2"
+                android:text="Active In:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black" />
+
+            <ImageButton
+                android:id="@+id/dialog_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                android:tint="@android:color/black" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/offer_zones_listview"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/double_stroke_no_padding_list_view"
+            android:paddingLeft="8dp" >
+        </ListView>
+  
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/actionbar_bg_color"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/dialog_save"
+            android:layout_width="wrap_content"
+            android:text="Save"
+            android:minWidth="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background" />
+    </LinearLayout>
+  </LinearLayout>
+</LinearLayout>

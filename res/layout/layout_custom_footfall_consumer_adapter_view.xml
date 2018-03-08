@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:collapseColumns="4" >
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      >
+
+        <TextView
+            android:id="@+id/foot_fall_consumer_serialno"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/right_border_view"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="1"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/foot_fall_consumer_id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|right"
+            android:padding="8dp"
+            android:text="Anonymous"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </TableRow>
+
+</TableLayout>

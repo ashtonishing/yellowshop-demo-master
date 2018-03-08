@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+     >
+
+    <CheckedTextView
+        android:id="@android:id/text1"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="?android:attr/listPreferredItemHeightSmall"
+        android:checked="false"
+        android:paddingLeft="20dp"
+        android:gravity="center_vertical"
+        android:checkMark="@drawable/switch_button_selector"
+        android:singleLine="true"
+        android:layout_gravity="center"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+
+    <ImageButton 
+        android:id="@+id/down_arrow_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_collapse_indicator"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        />
+   <!--    android:checkMark="@drawable/switch_button_selector" -->
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_bg_color"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="4dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/dashed_border"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/store_map_zone_specific_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Zone Name" />
+
+        <GridLayout
+            android:id="@+id/store_map_zone_specific_grid_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:columnCount="10" >
+        </GridLayout>
+    </LinearLayout>
+
+</LinearLayout>

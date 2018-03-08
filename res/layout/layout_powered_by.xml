@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/powered_by_layout"
+    android:layout_height="wrap_content"
+    android:background="@color/actionbar_bg_color"
+    android:gravity="center|right"
+    android:orientation="horizontal"
+    android:paddingBottom="2dp"
+    android:visibility="gone"
+    android:paddingRight="5dp"
+    android:paddingTop="2dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingRight="4dp"
+        android:text="@string/powered_by_buyopic"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/color_red"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/powered_by_buyopic_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:paddingLeft="2dp"
+        android:text="Buyopic"
+        android:shadowColor="@color/color_alerts_listview_header_text"
+        android:shadowDx="4"
+        android:shadowRadius="4"
+        android:shadowDy="4"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/color_red"
+        android:textStyle="bold|italic" />
+
+</LinearLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_bg_color"
+    android:padding="8dp" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:collapseColumns="4"
+        android:padding="8dp" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:shadowColor="@android:color/black"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:gravity="center|left"
+                android:text="Click-Through Detail:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Button
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:text="Show Chart" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/double_stroke_no_padding_edittext_grey_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/right_orange_border_view"
+                android:gravity="center|top"
+                android:padding="8dp"
+                android:text="Customer ID" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/right_solid_orange_grey_border_view"
+                android:gravity="center|top"
+                android:padding="8dp"
+                android:text="Click Through" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/double_stroke_no_padding_edittext_grey_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/right_orange_border_view"
+                android:gravity="center|top" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/right_solid_orange_grey_border_view"
+                    android:gravity="center|top"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="Top-Level Listing" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/right_solid_orange_grey_border_view"
+                    android:gravity="center|top"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="Merchant Page" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/right_solid_orange_grey_border_view"
+                    android:gravity="center|top"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="Detail Page" />
+            </LinearLayout>
+        </TableRow>
+
+        <ListView
+            android:id="@+id/click_through_listview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/double_stroke_no_padding_list_view"
+            android:divider="@color/color_alerts_listview_description_secondary_text"
+            android:dividerHeight="1dp"
+            >
+        </ListView>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/double_stroke_no_padding_list_view" >
+
+            <TextView
+                android:id="@+id/traffic_zone_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/right_border_view"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Total"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/click_through_total_top_level_listings"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/right_solid_white_grey_border_view"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/click_through_total_merchant_clicks"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/right_solid_white_grey_border_view"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/click_through_total_details_clicks"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/right_solid_white_grey_border_view"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+        </TableRow>
+        <include layout="@layout/emailreportlayout"/>
+    </TableLayout>
+
+</LinearLayout>

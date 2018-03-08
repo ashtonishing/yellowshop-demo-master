@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_bg_color"
+    android:padding="8dp" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:collapseColumns="4"
+        android:padding="8dp" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:shadowColor="@android:color/black"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Average Daily Dwell Time:" />
+            
+            <Button 
+                android:id="@+id/showchartbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show Chart"
+                android:background="@drawable/button_background"
+                />
+        </TableRow>
+
+                <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/double_stroke_no_padding_edittext_grey_bg" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/right_orange_border_view"
+                android:gravity="center|top"
+                android:text="Zone" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/right_solid_orange_grey_border_view"
+                android:gravity="center|top"
+                android:text="Total Customer Traffic" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/right_solid_orange_grey_border_view"
+                android:gravity="center|top"
+                android:text="Total Time (DD:HH:MM:SS)" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|top"
+                android:text="Avg. Time in Zone(DD:HH:MM:SS)" />
+        </TableRow>
+
+        <ListView
+            android:id="@+id/traffic_listview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/double_stroke_no_padding_list_view"
+            android:divider="@color/color_alerts_listview_description_secondary_text"
+            android:dividerHeight="1dp" >
+        </ListView>
+
+        <TableRow
+            android:background="@drawable/double_stroke_no_padding_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/traffic_zone_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/right_border_view"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Total"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/traffic_total_no_of_customers"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/right_solid_white_grey_border_view"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/traffic_total_time"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/right_solid_white_grey_border_view"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/traffic_avg_time"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+        <include layout="@layout/emailreportlayout"/>
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/expandable_list_view_group_background"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Report:"
+        android:paddingLeft="2dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/color_alerts_listview_description_secondary_text" />
+    
+     <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Average Customer Traffic"
+        android:textStyle="bold"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:paddingLeft="10dp"
+        android:shadowRadius="1"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/color_alerts_listview_description_secondary_text" />
+
+     <ImageButton 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/down_arrow"
+         android:paddingRight="2dp"
+         android:background="@android:color/transparent"
+         />
+</LinearLayout>

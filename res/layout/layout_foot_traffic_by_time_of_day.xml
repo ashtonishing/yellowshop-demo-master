@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_bg_color" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:collapseColumns="2"
+        android:paddingTop="8dp" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:paddingLeft="4dp"
+                android:shadowColor="@android:color/black"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                
+                android:text="Foot Traffic By Time of the day" />
+
+            <Button
+                android:id="@+id/showcharbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/button_background"
+                android:text="Show Chart" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/double_stroke_no_padding_edittext_grey_bg" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/right_orange_border_view"
+                android:gravity="center|top"
+                android:padding="8dp"
+                android:text="Time of Day" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/right_solid_orange_grey_border_view"
+                android:gravity="center|top"
+                android:padding="8dp"
+                android:text="Customer ID" />
+        </TableRow>
+
+        <ListView
+            android:id="@+id/foot_traffic_by_time_of_day_listview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/double_stroke_no_padding_list_view"
+            android:divider="@color/color_alerts_listview_description_secondary_text"
+            android:dividerHeight="1dp" >
+        </ListView>
+   <include layout="@layout/emailreportlayout"/>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/double_stroke_no_padding_list_view" >
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
